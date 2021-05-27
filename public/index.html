@@ -1,17 +1,49 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+
+  <script>
+
+    // Your web app's Firebase configuration
+    // var firebaseConfig = {
+    //   apiKey: "AIzaSyCXibebLl8qoGGPzgLY-maMX2G7K3TaJiA",
+    //   authDomain: "vue-http-demo-536f3.firebaseapp.com",
+    //   databaseURL: "https://vue-http-demo-536f3-default-rtdb.firebaseio.com",
+    //   projectId: "vue-http-demo-536f3",
+    //   storageBucket: "vue-http-demo-536f3.appspot.com",
+    //   messagingSenderId: "545186363505",
+    //   appId: "1:545186363505:web:9f1889caad1209805583d0"
+    // };
+    // // Initialize Firebase
+    // firebase.initializeApp(firebaseConfig);
+
+
+  </script>
+  <!-- <script src="firebase-messaging-sw.js"></script> -->
+  <script src="firebase.js"></script>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
 </html>

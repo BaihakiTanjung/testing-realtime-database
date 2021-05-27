@@ -1,6 +1,14 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import store from './store'
-import router from './router'
+import { createApp } from 'vue';
 
-createApp(App).use(router).use(store).mount('#app')
+import BaseCard from './components/UI/BaseCard.vue';
+import BaseButton from './components/UI/BaseButton.vue';
+import App from './App.vue';
+
+const app = createApp(App);
+
+app.component('base-card', BaseCard);
+app.component('base-button', BaseButton);
+
+app.mount('#app');
+
+
